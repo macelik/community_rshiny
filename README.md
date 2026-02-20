@@ -80,7 +80,7 @@ Upload the three required files:
 | **Cell annotation** | `.txt`, `.tsv`, or `.csv` | Tab-separated (for `.txt`/`.tsv`) or comma-separated. Must contain a cell barcode column (default: `cell_ID`) |
 | **Sample annotation** | `.txt`, `.tsv`, or `.csv` | Tab-separated or comma-separated. Must contain sample-level metadata expected by the community package |
 
-**Demo data** can be downloaded from:  
+**Full data** can be downloaded from:  
 <https://github.com/SoloveyMaria/community/tree/main/docs/showcase_notebooks/Lasry/input_data>
 
 Optionally upload a **custom LR database** (`.rds`, `.RData`, or `.csv`). It must contain columns: `Pair.Name`, `Ligand`, `Receptor`. If not provided, the package default `LR_database` is used.
@@ -142,14 +142,6 @@ community_shiny_app/
 
 ---
 
-## Notes
-
-- The app runs **entirely locally** — no cloud services or external APIs.
-- Outputs are written to R temp directories by default (via download handlers).
-- The `cell_ID.1` → `cell_ID` rename from the tutorial is handled automatically.
-- If the community package's functions throw errors about missing columns, the app displays the error message to help you diagnose the issue.
-
----
 
 ## Troubleshooting
 
